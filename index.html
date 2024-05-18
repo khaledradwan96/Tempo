@@ -22,7 +22,7 @@
 <body>
 
     <!-- ================ navbar ================  -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="navbar">
         <div class="container">
             <a class="navbar-brand logo" href="#">Tempo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,11 +45,15 @@
                     <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li>
                     <!-- === dropdown === -->
                     <li class="nav-item dropdown"><a class="nav-link" href="#">
-                            Drop Down</a>
+                            Drop Down
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
                             <li class="dropdown"><a href="#">
-                                    Deep Drop Down</a>
+                                    <span> Deep Drop Down</span>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </a>
                                 <ul>
                                     <li><a href="#">Deep Drop Down 1</a></li>
                                     <li><a href="#">Deep Drop Down 2</a></li>
@@ -92,7 +96,7 @@
                     vitae autem.
                 </p>
             </div>
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="item">
                         <i class="ri-dribbble-line"></i>

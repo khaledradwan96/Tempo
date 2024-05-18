@@ -9,6 +9,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #fdfdfe;
 }
 h1,
 h2,
@@ -203,3 +204,47 @@ header .content a:hover {
 }
 
 /* ================ services ================ */
+#services .item {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+}
+#services .item::after {
+  content: "";
+  position: absolute;
+  /* background: #fdeff2; */
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.4s;
+  z-index: -1;
+}
+#services .item i {
+  font-size: 48px;
+  line-height: 1;
+  color: var(--main-color);
+  transition: all 0.3s ease-in-out;
+}
+#services .item a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  margin-block: 15px;
+  transition: all 0.3s ease-in-out;
+}
+#services .item:hover::after {
+  background: #e43c5c;
+  top: 0;
+  border-radius: 0px;
+}
+#services .item:hover * {
+  color: #fff;
+}

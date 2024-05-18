@@ -58,6 +58,31 @@ section {
 }
 
 /* ================ navbar ================ */
+nav button.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* The Bar Icon */
+nav .bar-icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+nav .bar-icon span {
+  background-color: #fff;
+  margin-bottom: 5px;
+  height: 2px;
+  width: 100%;
+}
+nav .bar-icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+nav .bar-icon:hover span:nth-child(2) {
+  width: 100%;
+}
 nav .logo {
   font-size: 30px;
   margin: 0;
